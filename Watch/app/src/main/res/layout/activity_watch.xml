@@ -132,6 +132,8 @@
             android:text="00:00"
             android:textColor="@android:color/background_light"
             android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/seekBar"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -145,6 +147,8 @@
             android:textColor="@android:color/background_light"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/seekBar"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
         <SeekBar
@@ -152,9 +156,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="7dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toStartOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
