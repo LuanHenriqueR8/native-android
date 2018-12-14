@@ -15,13 +15,13 @@ public class RandomNumberActivity extends AppCompatActivity {
         setContentView(R.layout.activity_random_number);
     }
 
-    private Integer generateARandromNumber(){
+    private Integer generateARandomNumber(){
         return new Random().nextInt(10);
     }
 
     public void updateResultLabel(View view){
         TextView textView = findViewById(R.id.resultLabel);
-        Integer result = generateARandromNumber();
+        Integer result = generateARandomNumber();
         textView.setText("The selected number was: " + result);
     }
 }
